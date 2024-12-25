@@ -1,0 +1,356 @@
+/* Reseta estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema dark */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 1000;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark header {
+    background-color: rgba(18, 18, 18, 0.5);
+    border-color: #333;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #7e57c2, #ec407a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header button {
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #f1f5f9;
+}
+
+body.dark header button:hover {
+    background-color: #333;
+}
+
+header nav .hidden {
+    display: none;
+}
+
+header nav .hidden.md\\:flex {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #7e57c2;
+}
+
+body.dark header nav a {
+    color: #fff;
+}
+
+body.dark header nav a:hover {
+    color: #bb86fc;
+}
+
+/* Geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+/* Seções do site */
+main {
+    padding-top: 5rem;
+}
+
+main section {
+    padding: 4rem 0;
+}
+
+main section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark main section:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+/* Botões */
+button {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #7e57c2, #ec407a);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+/* Reset de Estilos */
+body, h1, h2, h3, p, a, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Configurações Gerais */
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.dark body {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dark header {
+    background-color: rgba(17, 24, 39, 0.8);
+    border-bottom: 1px solid #374151;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #7c3aed;
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #f3f4f6;
+}
+
+.dark header button:hover {
+    background-color: #374151;
+}
+
+/* Sessões */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+.dark section h2 {
+    color: #ec4899;
+}
+
+section p {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.dark section p {
+    color: #d1d5db;
+}
+
+/* Projetos */
+#projects {
+    background-color: #f9fafb;
+}
+
+.dark #projects {
+    background-color: #1f2937;
+}
+
+#projects .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#projects .grid div {
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark #projects .grid div {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+#projects .grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Contato */
+form {
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.dark form {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #374151;
+    background-color: #fff;
+}
+
+.dark form input, .dark form textarea {
+    border-color: #4b5563;
+    color: #f9fafb;
+    background-color: #111827;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+@keyframes color-change {
+    0% {
+        color: #ff0000; /* Vermelho */
+    }
+    25% {
+        color: #00ff00; /* Verde */
+    }
+    50% {
+        color: #0000ff; /* Azul */
+    }
+    75% {
+        color: #ff00ff; /* Roxo */
+    }
+    100% {
+        color: #ff0000; /* Vermelho (volta ao início) */
+    }
+}
+
+/* Classe para aplicar a animação */
+.animated-text {
+    font-size: 2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    animation: color-change 3s infinite; /* Duração e repetição infinita */
+}

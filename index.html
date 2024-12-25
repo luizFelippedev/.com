@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luizfelippe.dev</title>
+        <script type="module" crossorigin href="index.js"></script>
+        <link rel="stylesheet" crossorigin href="index.css">
+        <style>
+            /* Animação para trocar as cores (em RGB) */
+            @keyframes color-change {
+                0% {
+                    color: rgb(10, 0, 187); /* Vermelho */
+                }
+                10% {
+                    color: rgb(20, 0, 187); /* Verde */
+                }
+                20% {
+                    color: rgb(30, 0, 187); /* Verde */
+                }
+                30% {
+                    color: rgb(40, 0, 187); /* Verde */
+                }
+                40% {
+                    color: rgb(50, 0, 187); /* Azul */
+                }
+                50% {
+                   color: rgb(60, 0, 187); /* Roxo */
+                }
+                60% {
+                    color: rgb(70, 0, 187); /* Verde */
+                } 70% {
+                    color: rgb(80, 8, 213); /* Verde */
+                } 80% {
+                    color: rgb(90, 0, 187); /* Verde */
+                }
+                90% {
+                    color: rgb(100, 0, 187); /* Verde */
+                }
+                100% {
+                    color: rgb(110, 0, 187); /* Vermelho (volta ao início) */
+                }
+               
+                110% {
+                    color: rgb(100, 0, 187); /* Vermelho (volta ao início) */
+                }  
+                120% {
+                    color: rgb(90, 0, 187); /* Vermelho (volta ao início) */
+                }  
+                130% {
+                    color: rgb(80, 0, 187); /* Vermelho (volta ao início) */
+                }  
+                140% {
+                    color: rgb(70, 0, 187); /* Vermelho (volta ao início) */
+                }  
+                150% {
+                    color: rgb(60, 0, 187); /* Vermelho (volta ao início) */
+                }
+                160% {
+                    color: rgb(50, 0, 187);
+                }
+                 170% {
+                    color: rgb(40, 0, 187); /* Verde */
+                }
+                180% {
+                    color: rgb(30, 0, 187); /* Verde */
+                }
+                190% {
+                    color: rgb(20, 0, 187); /* Verde */
+                }
+                200% {
+                    color: rgb(10, 0, 187); /* Vermelho */
+                }
+            }
+
+
+            /* Classe para aplicar a animação */
+            .animated-text {
+                font-size: 2rem; /* Tamanho da fonte */
+                font-weight: bold; /* Peso da fonte */
+                animation: color-change 3s infinite ease-in-out; /* Duração e suavização */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <div class="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-white relative">
+                <header class="select-none fixed top-0 w-full z-50 backdrop-blur-lg bg-white/50 dark:bg-zinc-950/50 border-b border-zinc-200 dark:border-zinc-800">
+                    <div class="container mx-auto px-6 py-4">
+                        <nav class="flex items-center justify-between">
+                            <a href="#" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Luizfelippe.dev</a>
+                            <div class="flex items-center gap-4">
+                                <!-- Botão para alternar entre claro e escuro -->
+                                <button id="theme-toggle" class="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun">
+                                        <circle cx="12" cy="12" r="4"></circle>
+                                        <path d="M12 2v2"></path>
+                                        <path d="M12 20v2"></path>
+                                        <path d="m4.93 4.93 1.41 1.41"></path>
+                                        <path d="m17.66 17.66 1.41 1.41"></path>
+                                        <path d="M2 12h2"></path>
+                                        <path d="M20 12h2"></path>
+                                        <path d="m6.34 17.66-1.41 1.41"></path>
+                                        <path d="m19.07 4.93-1.41 1.41"></path>
+                                    </svg>
+                                </button>
+                                <div class="hidden md:flex items-center gap-6">
+                                    <a href="#about" class="hover:text-purple-600 transition-colors">Sobre</a>
+                                    <a href="#projects" class="hover:text-purple-600 transition-colors">Projetos</a>
+                                    <a href="#contact" class="hover:text-purple-600 transition-colors">Contato</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <main>
+                    <!-- Sessão Sobre -->
+                    <section id="about" class="py-16">
+                        <div class="container mx-auto px-6 text-center">
+                            <h2 class="text-4xl font-bold mb-4 animated-text">Luiz</h2>
+                            <p class="text-lg text-zinc-700 dark:text-zinc-300 animated-text">Desenvolvedor Backend</p>
+                        </div>
+                    </section>
+                
+                    <!-- Sessão Projetos -->
+                    <section id="projects" class="py-16 bg-gray-100 dark:bg-zinc-900">
+                        <div class="container mx-auto px-6">
+                            <h2 class="text-4xl font-bold text-center mb-8 animated-text">Projetos</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white dark:bg-zinc-950 p-6 rounded-lg shadow-md">
+                                    <h3 class="text-2xl font-bold mb-2 animated-text">Projeto 1</h3>
+                                    <p class="text-zinc-700 dark:text-zinc-300">teste</p>
+                                    <a href="#" class="inline-block mt-4 text-purple-600 hover:underline">Ver mais</a>
+                                </div>
+                                <div class="bg-white dark:bg-zinc-950 p-6 rounded-lg shadow-md">
+                                    <h3 class="text-2xl font-bold mb-2 animated-text">Projeto 2</h3>
+                                    <p class="text-zinc-700 dark:text-zinc-300">teste</p>
+                                    <a href="#" class="inline-block mt-4 text-purple-600 hover:underline">Ver mais</a>
+                                </div>
+                                <div class="bg-white dark:bg-zinc-950 p-6 rounded-lg shadow-md">
+                                    <h3 class="text-2xl font-bold mb-2 animated-text">teste</h3>
+                                    <p class="text-zinc-700 dark:text-zinc-300"></p>
+                                    <a href="#" class="inline-block mt-4 text-purple-600 hover:underline">Ver mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <!-- Sessão Contato -->
+                    <section id="contact" class="py-16">
+                        <div class="container mx-auto px-6 text-center">
+                            <h2 class="text-4xl font-bold mb-4 animated-text">Contato</h2>
+                            <p class="text-lg text-zinc-700 dark:text-zinc-300 mb-8">
+                                teste2.
+                            </p>
+                            <div class="text-lg text-zinc-700 dark:text-zinc-300 mb-8">
+                                <p><strong>E-mail:</strong> <a href="mailto:luizfelippeandrade@outlook.com" class="text-purple-600 hover:underline flex items-center justify-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
+                                        <path d="M.05 4.555L8 9.293l7.95-4.738A1 1 0 0 0 15 4H1a1 1 0 0 0-.95.555z"/>
+                                    </svg> luizfelippeandrade@outlook.com </a></p>
+                                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511952323645" target="_blank" class="text-purple-600 hover:underline flex items-center justify-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path d="M13.601 2.326a7.826 7.826 0 0 0-5.507-2.326C3.79 0 0 3.771 0 8.419c0 1.485.388 2.946 1.127 4.242L.085 15.8l3.216-.841c1.217.646 2.585.987 3.992.987h.002c4.637 0 8.419-3.79 8.419-8.42 0-2.261-.88-4.389-2.493-5.987zm-5.507 12.297c-1.287 0-2.542-.328-3.632-.948l-.26-.145-1.91.499.511-1.862-.149-.265a7.03 7.03 0 0 1-.99-3.581c0-3.906 3.187-7.094 7.095-7.094 1.89 0 3.665.734 5.002 2.068a7.035 7.035 0 0 1 2.093 5.011c0 3.907-3.187 7.094-7.094 7.094zm3.996-5.835c-.217-.108-1.284-.633-1.483-.705-.199-.071-.344-.108-.49.108-.148.217-.564.705-.69.851-.127.148-.253.165-.47.055-.217-.108-.917-.337-1.746-1.074-.646-.574-1.083-1.287-1.21-1.504-.127-.217-.014-.335.095-.443.098-.097.217-.253.326-.38.109-.127.145-.217.217-.362.072-.145.036-.271-.018-.38-.054-.108-.49-1.18-.671-1.613-.176-.425-.355-.368-.49-.374h-.419c-.127 0-.335.048-.511.271-.176.217-.673.658-.673 1.604 0 .945.689 1.86.785 1.987.096.127 1.357 2.073 3.292 2.905.46.198.82.317 1.1.406.462.147.882.127 1.213.077.37-.055 1.136-.463 1.296-.909.16-.446.16-.83.112-.909-.047-.08-.175-.127-.37-.217z"/>
+                                    </svg> +55 (11) 952323645</a></p>
+                            </div>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://www.linkedin.com/in/seulinkedin" target="_blank" class="text-purple-600 hover:underline flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.324 0 .725 0h14.55c.401 0 .725.513.725 1.146v13.708c0 .633-.324 1.146-.725 1.146H.725A.723.723 0 0 1 0 14.854V1.146zM4.943 12.307V6.169H2.542v6.138h2.4zm-1.2-7.318c-.837 0-1.514-.679-1.514-1.516 0-.837.677-1.515 1.514-1.515.838 0 1.515.678 1.515 1.515 0 .837-.677 1.516-1.515 1.516zM12.307 12.307V9.359c0-1.405-.027-3.217-1.963-3.217-1.968 0-2.27 1.539-2.27 3.123v3.042h2.4v-3.042c0-.708.014-1.622.989-1.622.988 0 .994 1.097.994 1.673v2.991h2.4z"/>
+                                    </svg>
+                                    LinkedIn</a>
+                                <a href="https://github.com/luizFelippedev" target="_blank" class="text-purple-600 hover:underline flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4.01 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                    </svg>
+                                    GitHub</a>
+                                </div>
+                        
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <!-- Script para alternar o tema -->
+        <script>
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const html = document.documentElement;
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = html.classList.toggle('dark');
+                themeIcon.innerHTML = isDark
+                    ? `<circle cx="12" cy="12" r="4"></circle>
+                       <path d="M12 2v2"></path>
+                       <path d="M12 20v2"></path>
+                       <path d="m4.93 4.93 1.41 1.41"></path>
+                       <path d="m17.66 17.66 1.41 1.41"></path>
+                       <path d="M2 12h2"></path>
+                       <path d="M20 12h2"></path>
+                       <path d="m6.34 17.66-1.41 1.41"></path>
+                       <path d="m19.07 4.93-1.41 1.41"></path>`
+                    : `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
+            });
+           
+        </script>
+    </body>
+</html>
